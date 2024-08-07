@@ -1,0 +1,39 @@
+body {
+    background-image:url(https://qph.cf2.quoracdn.net/main-qimg-dc4c2b42e45fda99f7dd24d528f1e9cd-lq);  
+    background-color: lightblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+    
+    
+  }
+  /* .purple{
+    color: purple;
+  }
+  .violet{
+    color:violet;
+  }
+  .blue{
+    color:blue;
+  }
+  .lightblue{
+    color: brown;
+  }
+  .cyan{
+    color: burlywood;
+  } */
+  .transparent{
+    background-color: rgba(0, 0, 255, 0.212);
+    
+
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    color: lightgreen;
+  }
+  

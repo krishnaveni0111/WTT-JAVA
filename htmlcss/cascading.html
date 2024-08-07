@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: powderblue;
+}
+#ll{
+    text-align: center;
+}
+h1   {
+    
+    color: blue;
+}
+p    {
+    color: red;
+    border: 2px solid powderblue;
+    padding: 30px;
+    }
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #meta{
+        font-weight: 500;
+
+    }
+    .model{
+        color: lightgreen;
+        background-color: cornflowerblue;
+    }
+    h2,h3{
+        color: yellowgreen;
+    }
+
+
+</style>
+</head>
+<body style="background-image:url(https://venturebeat.com/wp-content/uploads/2023/07/nuneybits_vector_art_of_a_llama_programming_8c825672-172b-4e69-a6f1-b7c9e8bf5294.png?w=803?w=1200&strip=all)">
+
+<h1 id="ll">Introducing Llama 3.1: Our most capable models to date</h1>
+<p id="meta">Meta is committed to openly accessible AI. Read Mark Zuckerberg’s letter detailing why open source is good for developers, good for Meta, and good for the world.
+    Bringing open intelligence to all, our latest models expand context length to 128K, add support across eight languages, and include Llama 3.1 405B—the first frontier-level open source AI model.
+    Llama 3.1 405B is in a class of its own, with unmatched flexibility, control, and state-of-the-art capabilities that rival the best closed source models. Our new model will enable the community to unlock new workflows, such as synthetic data generation and model distillation.</p>
+<h2>Our goals for Llama 3</h2>
+<p><i>
+    
+    With Llama 3, we set out to build the best open models that are on par with the best proprietary models available today. We wanted to address developer feedback to increase the overall helpfulness of Llama 3 and are doing so while continuing to play a leading role on responsible use and deployment of LLMs. We are embracing the open source ethos of releasing early and often to enable the community to get access to these models while they are still in development. The text-based models we are releasing today are the first in the Llama 3 collection of models. Our goal in the near future is to make Llama 3 multilingual and multimodal, have longer context, and continue to improve overall performance across core LLM capabilities such as reasoning and coding</i>
+    </p>
+    <h3>Model architecture</h3>
+    <p class="model">In line with our design philosophy, we opted for a relatively standard decoder-only transformer architecture in Llama 3. Compared to Llama 2, we made several key improvements. Llama 3 uses a tokenizer with a vocabulary of 128K tokens that encodes language much more efficiently, which leads to substantially improved model performance. To improve the inference efficiency of Llama 3 models, we’ve adopted grouped query attention (GQA) across both the 8B and 70B sizes. We trained the models on sequences of 8,192 tokens, using a mask to ensure self-attention does not cross document boundaries.</p>
+<pre class="model">To ensure Llama 3 is trained on data of the highest quality, we developed a series of data-filtering pipelines. 
+                   These pipelines include using heuristic filters, NSFW filters, semantic deduplication approaches, and text classifiers to predict data quality. 
+                    We found that previous generations of Llama are surprisingly good at identifying high-quality data, hence we used Llama 2 to generate the training data for the text-quality classifiers that are powering Llama 3.
+
+</pre>
+
+</body>
+</html>
