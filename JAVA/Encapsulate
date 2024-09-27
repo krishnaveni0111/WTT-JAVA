@@ -1,0 +1,24 @@
+package OOPS.com.in;
+
+public class EncapsulateArea {
+	int length;
+	int breadth;
+	EncapsulateArea(int length,int breadth){
+		this.length=length;
+		this.breadth=breadth;
+		
+	}
+	void Area() {
+		int area=length*breadth;
+		System.out.println(area);
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		EncapsulateArea obj=new EncapsulateArea(10,20);
+		obj.Area();
+
+	}
+
+}
