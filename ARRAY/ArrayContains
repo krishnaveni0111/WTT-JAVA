@@ -1,0 +1,25 @@
+package array.com.in;
+
+public class ArrayContains {
+
+    public static boolean containsValue(int[] numbers, int value) {
+      
+        for (int num : numbers) {
+      
+            if (num == value) {
+                return true; 
+            }
+        }
+        return false; 
+    }
+
+    public static void main(String[] args) {
+     
+        int[] numbers = {10, 20, 30, 40, 50};
+        int targetValue = 30; 
+      
+        boolean exists = containsValue(numbers, targetValue);
+
+        System.out.println("Does the array contain " + targetValue + "? " + exists);
+    }
+}
