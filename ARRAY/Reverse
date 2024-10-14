@@ -1,0 +1,31 @@
+package array.com.in;
+
+public class ReverseArray {
+
+    public static int[] reverseArray(int[] numbers) {
+     
+        int n = numbers.length;
+
+       
+        int[] reversed = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            reversed[i] = numbers[n - 1 - i];
+        }
+
+        return reversed; 
+    }
+
+    public static void main(String[] args) {
+  
+        int[] numbers = {1, 2, 3, 4, 5};
+
+       
+        int[] reversedArray = reverseArray(numbers);
+
+        System.out.println("Reversed array:");
+        for (int num : reversedArray) {
+            System.out.print(num + " ");
+        }
+    }
+}
