@@ -1,0 +1,23 @@
+package workout;
+
+public class LiftProblem {
+    public static void main(String[] args) {
+        
+        int lift1Floor = 10; 
+        int lift2Floor = 1;  
+        int personFloor = 6; 
+
+        
+        int distanceLift1 = Math.abs(personFloor - lift1Floor);
+        int distanceLift2 = Math.abs(personFloor - lift2Floor);
+
+       
+        if (distanceLift1 < distanceLift2) {
+            System.out.println("Lift 1 will arrive first.");
+        } else if (distanceLift2 < distanceLift1) {
+            System.out.println("Lift 2 will arrive first.");
+        } else {
+            System.out.println("Both lifts will arrive at the same time.");
+        }
+    }
+}
