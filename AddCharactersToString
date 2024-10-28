@@ -1,0 +1,27 @@
+package workout;
+
+public class AddCharactersToString {
+    public static void main(String[] args) {
+       
+        String original = "Hello";
+        String toAdd = " World!";
+        
+
+        String concatenatedResult = original + toAdd;
+        System.out.println("Using String Concatenation: " + concatenatedResult);
+        
+        StringBuilder sb = new StringBuilder(original);
+        
+        sb.append(toAdd);
+        
+        String builderResult = sb.toString();
+        System.out.println("Using StringBuilder: " + builderResult);
+        
+        sb.insert(5, ", Java"); 
+        System.out.println("After Inserting: " + sb.toString());
+
+        StringBuffer stringBuffer = new StringBuffer(original);
+        stringBuffer.append(toAdd);
+        System.out.println("Using StringBuffer: " + stringBuffer.toString());
+    }
+}
