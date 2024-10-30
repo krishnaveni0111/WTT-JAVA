@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class EvenLengthWord {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a single word: ");
+        String word = scanner.next();  // Get a single word input from user
+
+        if (word.length() % 2 == 0) {
+            System.out.println("The word \"" + word + "\" has an even length.");
+        } else {
+            System.out.println("The word \"" + word + "\" has an odd length.");
+        }
+        scanner.close();
+    }
+}
