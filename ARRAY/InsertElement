@@ -1,0 +1,24 @@
+package workout;
+
+import java.util.Arrays; 
+
+public class InsertElement {
+    public static void main(String[] args) {
+    
+        int[] array = {10, 20, 30, 40, 50}; 
+        int insertIndex = 2;
+        int newValue = 25; 
+
+        int[] newArray = new int[array.length + 1]; 
+
+        for (int i = 0, j = 0; i < array.length; i++, j++) {
+           
+            if (i == insertIndex) {
+                newArray[j++] = newValue;
+            }
+            newArray[j] = array[i]; 
+        }
+
+        System.out.println("Array after insertion: " + Arrays.toString(newArray));
+    }
+}
