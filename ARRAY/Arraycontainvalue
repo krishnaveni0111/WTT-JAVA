@@ -1,0 +1,25 @@
+package workout;
+
+import java.util.Scanner;
+
+
+public class Arraycontainvalue {
+    public static void main(String[] args) {
+        int[] array = {10, 20, 30, 40, 50}; 
+        Scanner scanner = new Scanner(System.in); 
+
+        System.out.print("Enter the value to search for: ");
+        int searchValue = scanner.nextInt(); 
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == searchValue) { 
+                System.out.println("Array contains the value " + searchValue + " at index " + i);
+                scanner.close(); 
+                return; 
+            }
+        }
+
+        System.out.println("Array does not contain the value " + searchValue);
+     
+    }
+}
